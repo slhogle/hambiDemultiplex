@@ -1,0 +1,23 @@
+{
+    "CN": "FFGC Turku FI",
+    "PL": "ILLUMINA",
+    "PM": "MiSeq M00558 2.6.2.1",
+    "decoder": {
+        "@dimension01": {
+            "codec": {
+                "@ACGTTACC_ACCGACAA": { "barcode": [ "ACGTTACC", "ACCGACAA" ] },
+                "@GATCCATG_AGTGGCAA": { "barcode": [ "GATCCATG", "AGTGGCAA" ] },
+                "@GCCTATCA_CACAGACT": { "barcode": [ "GCCTATCA", "CACAGACT" ] },
+                "@AACAACCG_CGACACTT": { "barcode": [ "AACAACCG", "CGACACTT" ] },
+                "@ACTCGTTG_GACTTGTG": { "barcode": [ "ACTCGTTG", "GACTTGTG" ] },
+                "@GTATGCTG_GTTCCATG": { "barcode": [ "GTATGCTG", "GTTCCATG" ] }
+            },
+            "transform": { "token": [ "1::8", "2::8" ] }
+        }
+    },
+    "filter incoming qc fail": true,
+    "flowcell id": "KGK59",
+    "template": {
+        "transform": { "token": [ "0::", "3::" ] }
+    }
+}

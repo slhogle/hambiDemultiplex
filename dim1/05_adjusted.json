@@ -1,0 +1,80 @@
+{
+    "CN": "FFGC Turku FI",
+    "PL": "ILLUMINA",
+    "PM": "MiSeq M00558 2.6.2.1",
+    "filter incoming qc fail": true,
+    "flowcell id": "KGK59",
+    "input": [
+        "../R1.fastq.gz",
+        "../I1.fastq.gz",
+        "../I2.fastq.gz",
+        "../R2.fastq.gz"
+    ],
+    "output": [
+        "l00.bam "
+    ],
+    "report url": "07_sample_report.json",
+    "sample": {
+        "algorithm": "pamld",
+        "codec": {
+            "@AACAACCG_CGACACTT": {
+                "barcode": [
+                    "AACAACCG",
+                    "CGACACTT"
+                ],
+                "concentration": 0.219176615800863
+            },
+            "@ACGTTACC_ACCGACAA": {
+                "barcode": [
+                    "ACGTTACC",
+                    "ACCGACAA"
+                ],
+                "concentration": 0.091167772541534
+            },
+            "@ACTCGTTG_GACTTGTG": {
+                "barcode": [
+                    "ACTCGTTG",
+                    "GACTTGTG"
+                ],
+                "concentration": 0.095489484313825
+            },
+            "@GATCCATG_AGTGGCAA": {
+                "barcode": [
+                    "GATCCATG",
+                    "AGTGGCAA"
+                ],
+                "concentration": 0.108999902536231
+            },
+            "@GCCTATCA_CACAGACT": {
+                "barcode": [
+                    "GCCTATCA",
+                    "CACAGACT"
+                ],
+                "concentration": 0.201943408843212
+            },
+            "@GTATGCTG_GTTCCATG": {
+                "barcode": [
+                    "GTATGCTG",
+                    "GTTCCATG"
+                ],
+                "concentration": 0.094554580060876
+            }
+        },
+        "confidence threshold": 0.9,
+        "noise": 0.188668235903455,
+        "transform": {
+            "token": [
+                "1::8",
+                "2::8"
+            ]
+        }
+    },
+    "template": {
+        "transform": {
+            "token": [
+                "0::",
+                "3::"
+            ]
+        }
+    }
+}

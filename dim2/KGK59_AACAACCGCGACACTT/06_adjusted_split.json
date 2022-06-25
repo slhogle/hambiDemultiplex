@@ -1,0 +1,522 @@
+{
+    "CN": "FFGC Turku FI",
+    "PL": "ILLUMINA",
+    "PM": "MiSeq M00558 2.6.2.1",
+    "filter incoming qc fail": true,
+    "flowcell id": "KGK59",
+    "flowcell lane number": 1,
+    "input": [
+        "../../dim1/KGK59_AACAACCGCGACACTT.bam",
+        "../../dim1/KGK59_AACAACCGCGACACTT.bam"
+    ],
+    "output": [
+        "l00.bam "
+    ],
+    "report url": "07_sample_report.json",
+    "sample": {
+        "algorithm": "pamld",
+        "codec": {
+            "@AAGCGCCT_AATCCTAT": {
+                "barcode": [
+                    "AAGCGCCT",
+                    "AATCCTAT"
+                ],
+                "concentration": 0.02076138449885,
+                "output": [
+                    "KGK59_l01_AAGCGCCTAATCCTAT.fastq.gz"
+                ]
+            },
+            "@AAGCGCCT_ATCTGGAC": {
+                "barcode": [
+                    "AAGCGCCT",
+                    "ATCTGGAC"
+                ],
+                "concentration": 0.024650901045478,
+                "output": [
+                    "KGK59_l01_AAGCGCCTATCTGGAC.fastq.gz"
+                ]
+            },
+            "@AAGCGCCT_CGATTCCG": {
+                "barcode": [
+                    "AAGCGCCT",
+                    "CGATTCCG"
+                ],
+                "concentration": 0.018316193997594,
+                "output": [
+                    "KGK59_l01_AAGCGCCTCGATTCCG.fastq.gz"
+                ]
+            },
+            "@AAGCGCCT_GAGACTGA": {
+                "barcode": [
+                    "AAGCGCCT",
+                    "GAGACTGA"
+                ],
+                "concentration": 0.02400309406735,
+                "output": [
+                    "KGK59_l01_AAGCGCCTGAGACTGA.fastq.gz"
+                ]
+            },
+            "@AAGCGCCT_GCGAAGTG": {
+                "barcode": [
+                    "AAGCGCCT",
+                    "GCGAAGTG"
+                ],
+                "concentration": 0.019297265837302,
+                "output": [
+                    "KGK59_l01_AAGCGCCTGCGAAGTG.fastq.gz"
+                ]
+            },
+            "@AAGCGCCT_TCTCAATC": {
+                "barcode": [
+                    "AAGCGCCT",
+                    "TCTCAATC"
+                ],
+                "concentration": 0.028098560809336,
+                "output": [
+                    "KGK59_l01_AAGCGCCTTCTCAATC.fastq.gz"
+                ]
+            },
+            "@ATCGGTTC_AATCCTAT": {
+                "barcode": [
+                    "ATCGGTTC",
+                    "AATCCTAT"
+                ],
+                "concentration": 0.021863886713484,
+                "output": [
+                    "KGK59_l01_ATCGGTTCAATCCTAT.fastq.gz"
+                ]
+            },
+            "@ATCGGTTC_ATCTGGAC": {
+                "barcode": [
+                    "ATCGGTTC",
+                    "ATCTGGAC"
+                ],
+                "concentration": 0.02677566513889,
+                "output": [
+                    "KGK59_l01_ATCGGTTCATCTGGAC.fastq.gz"
+                ]
+            },
+            "@ATCGGTTC_CGATTCCG": {
+                "barcode": [
+                    "ATCGGTTC",
+                    "CGATTCCG"
+                ],
+                "concentration": 0.023100122821207,
+                "output": [
+                    "KGK59_l01_ATCGGTTCCGATTCCG.fastq.gz"
+                ]
+            },
+            "@ATCGGTTC_GAGACTGA": {
+                "barcode": [
+                    "ATCGGTTC",
+                    "GAGACTGA"
+                ],
+                "concentration": 0.02598449542737,
+                "output": [
+                    "KGK59_l01_ATCGGTTCGAGACTGA.fastq.gz"
+                ]
+            },
+            "@ATCGGTTC_GCGAAGTG": {
+                "barcode": [
+                    "ATCGGTTC",
+                    "GCGAAGTG"
+                ],
+                "concentration": 0.021163121113693,
+                "output": [
+                    "KGK59_l01_ATCGGTTCGCGAAGTG.fastq.gz"
+                ]
+            },
+            "@ATCGGTTC_TCTCAATC": {
+                "barcode": [
+                    "ATCGGTTC",
+                    "TCTCAATC"
+                ],
+                "concentration": 0.031310313985783,
+                "output": [
+                    "KGK59_l01_ATCGGTTCTCTCAATC.fastq.gz"
+                ]
+            },
+            "@CAACACCC_AATCCTAT": {
+                "barcode": [
+                    "CAACACCC",
+                    "AATCCTAT"
+                ],
+                "concentration": 0.016142215831525,
+                "output": [
+                    "KGK59_l01_CAACACCCAATCCTAT.fastq.gz"
+                ]
+            },
+            "@CAACACCC_ATCTGGAC": {
+                "barcode": [
+                    "CAACACCC",
+                    "ATCTGGAC"
+                ],
+                "concentration": 0.023797678807564,
+                "output": [
+                    "KGK59_l01_CAACACCCATCTGGAC.fastq.gz"
+                ]
+            },
+            "@CAACACCC_CGATTCCG": {
+                "barcode": [
+                    "CAACACCC",
+                    "CGATTCCG"
+                ],
+                "concentration": 0.020980708083518,
+                "output": [
+                    "KGK59_l01_CAACACCCCGATTCCG.fastq.gz"
+                ]
+            },
+            "@CAACACCC_GAGACTGA": {
+                "barcode": [
+                    "CAACACCC",
+                    "GAGACTGA"
+                ],
+                "concentration": 0.023195876288659,
+                "output": [
+                    "KGK59_l01_CAACACCCGAGACTGA.fastq.gz"
+                ]
+            },
+            "@CAACACCC_GCGAAGTG": {
+                "barcode": [
+                    "CAACACCC",
+                    "GCGAAGTG"
+                ],
+                "concentration": 0.018556915005156,
+                "output": [
+                    "KGK59_l01_CAACACCCGCGAAGTG.fastq.gz"
+                ]
+            },
+            "@CAACACCC_TCTCAATC": {
+                "barcode": [
+                    "CAACACCC",
+                    "TCTCAATC"
+                ],
+                "concentration": 0.028262251094478,
+                "output": [
+                    "KGK59_l01_CAACACCCTCTCAATC.fastq.gz"
+                ]
+            },
+            "@CTGGATGC_AATCCTAT": {
+                "barcode": [
+                    "CTGGATGC",
+                    "AATCCTAT"
+                ],
+                "concentration": 0.017470995793266,
+                "output": [
+                    "KGK59_l01_CTGGATGCAATCCTAT.fastq.gz"
+                ]
+            },
+            "@CTGGATGC_ATCTGGAC": {
+                "barcode": [
+                    "CTGGATGC",
+                    "ATCTGGAC"
+                ],
+                "concentration": 0.022013668673744,
+                "output": [
+                    "KGK59_l01_CTGGATGCATCTGGAC.fastq.gz"
+                ]
+            },
+            "@CTGGATGC_CGATTCCG": {
+                "barcode": [
+                    "CTGGATGC",
+                    "CGATTCCG"
+                ],
+                "concentration": 0.016471736144098,
+                "output": [
+                    "KGK59_l01_CTGGATGCCGATTCCG.fastq.gz"
+                ]
+            },
+            "@CTGGATGC_GAGACTGA": {
+                "barcode": [
+                    "CTGGATGC",
+                    "GAGACTGA"
+                ],
+                "concentration": 0.020839485092415,
+                "output": [
+                    "KGK59_l01_CTGGATGCGAGACTGA.fastq.gz"
+                ]
+            },
+            "@CTGGATGC_GCGAAGTG": {
+                "barcode": [
+                    "CTGGATGC",
+                    "GCGAAGTG"
+                ],
+                "concentration": 0.017318539155144,
+                "output": [
+                    "KGK59_l01_CTGGATGCGCGAAGTG.fastq.gz"
+                ]
+            },
+            "@CTGGATGC_TCTCAATC": {
+                "barcode": [
+                    "CTGGATGC",
+                    "TCTCAATC"
+                ],
+                "concentration": 0.025583828683673,
+                "output": [
+                    "KGK59_l01_CTGGATGCTCTCAATC.fastq.gz"
+                ]
+            },
+            "@GCCACACC_AATCCTAT": {
+                "barcode": [
+                    "GCCACACC",
+                    "AATCCTAT"
+                ],
+                "concentration": 0.011038930471214,
+                "output": [
+                    "KGK59_l01_GCCACACCAATCCTAT.fastq.gz"
+                ]
+            },
+            "@GCCACACC_ATCTGGAC": {
+                "barcode": [
+                    "GCCACACC",
+                    "ATCTGGAC"
+                ],
+                "concentration": 0.015448939329747,
+                "output": [
+                    "KGK59_l01_GCCACACCATCTGGAC.fastq.gz"
+                ]
+            },
+            "@GCCACACC_CGATTCCG": {
+                "barcode": [
+                    "GCCACACC",
+                    "CGATTCCG"
+                ],
+                "concentration": 0.009905401993383,
+                "output": [
+                    "KGK59_l01_GCCACACCCGATTCCG.fastq.gz"
+                ]
+            },
+            "@GCCACACC_GAGACTGA": {
+                "barcode": [
+                    "GCCACACC",
+                    "GAGACTGA"
+                ],
+                "concentration": 0.01326212270994,
+                "output": [
+                    "KGK59_l01_GCCACACCGAGACTGA.fastq.gz"
+                ]
+            },
+            "@GCCACACC_GCGAAGTG": {
+                "barcode": [
+                    "GCCACACC",
+                    "GCGAAGTG"
+                ],
+                "concentration": 0.008838740462098,
+                "output": [
+                    "KGK59_l01_GCCACACCGCGAAGTG.fastq.gz"
+                ]
+            },
+            "@GCCACACC_TCTCAATC": {
+                "barcode": [
+                    "GCCACACC",
+                    "TCTCAATC"
+                ],
+                "concentration": 0.018174436070919,
+                "output": [
+                    "KGK59_l01_GCCACACCTCTCAATC.fastq.gz"
+                ]
+            },
+            "@GGTACCCT_AATCCTAT": {
+                "barcode": [
+                    "GGTACCCT",
+                    "AATCCTAT"
+                ],
+                "concentration": 0.017647524532145,
+                "output": [
+                    "KGK59_l01_GGTACCCTAATCCTAT.fastq.gz"
+                ]
+            },
+            "@GGTACCCT_ATCTGGAC": {
+                "barcode": [
+                    "GGTACCCT",
+                    "ATCTGGAC"
+                ],
+                "concentration": 0.021367466502334,
+                "output": [
+                    "KGK59_l01_GGTACCCTATCTGGAC.fastq.gz"
+                ]
+            },
+            "@GGTACCCT_CGATTCCG": {
+                "barcode": [
+                    "GGTACCCT",
+                    "CGATTCCG"
+                ],
+                "concentration": 0.018301750737141,
+                "output": [
+                    "KGK59_l01_GGTACCCTCGATTCCG.fastq.gz"
+                ]
+            },
+            "@GGTACCCT_GAGACTGA": {
+                "barcode": [
+                    "GGTACCCT",
+                    "GAGACTGA"
+                ],
+                "concentration": 0.021613536865619,
+                "output": [
+                    "KGK59_l01_GGTACCCTGAGACTGA.fastq.gz"
+                ]
+            },
+            "@GGTACCCT_GCGAAGTG": {
+                "barcode": [
+                    "GGTACCCT",
+                    "GCGAAGTG"
+                ],
+                "concentration": 0.017005601845313,
+                "output": [
+                    "KGK59_l01_GGTACCCTGCGAAGTG.fastq.gz"
+                ]
+            },
+            "@GGTACCCT_TCTCAATC": {
+                "barcode": [
+                    "GGTACCCT",
+                    "TCTCAATC"
+                ],
+                "concentration": 0.027631562054666,
+                "output": [
+                    "KGK59_l01_GGTACCCTTCTCAATC.fastq.gz"
+                ]
+            },
+            "@TCGGTCAA_AATCCTAT": {
+                "barcode": [
+                    "TCGGTCAA",
+                    "AATCCTAT"
+                ],
+                "concentration": 0.018071193505454,
+                "output": [
+                    "KGK59_l01_TCGGTCAAAATCCTAT.fastq.gz"
+                ]
+            },
+            "@TCGGTCAA_ATCTGGAC": {
+                "barcode": [
+                    "TCGGTCAA",
+                    "ATCTGGAC"
+                ],
+                "concentration": 0.018393224720014,
+                "output": [
+                    "KGK59_l01_TCGGTCAAATCTGGAC.fastq.gz"
+                ]
+            },
+            "@TCGGTCAA_CGATTCCG": {
+                "barcode": [
+                    "TCGGTCAA",
+                    "CGATTCCG"
+                ],
+                "concentration": 0.016247063203707,
+                "output": [
+                    "KGK59_l01_TCGGTCAACGATTCCG.fastq.gz"
+                ]
+            },
+            "@TCGGTCAA_GAGACTGA": {
+                "barcode": [
+                    "TCGGTCAA",
+                    "GAGACTGA"
+                ],
+                "concentration": 0.02155255421037,
+                "output": [
+                    "KGK59_l01_TCGGTCAAGAGACTGA.fastq.gz"
+                ]
+            },
+            "@TCGGTCAA_GCGAAGTG": {
+                "barcode": [
+                    "TCGGTCAA",
+                    "GCGAAGTG"
+                ],
+                "concentration": 0.017805865461563,
+                "output": [
+                    "KGK59_l01_TCGGTCAAGCGAAGTG.fastq.gz"
+                ]
+            },
+            "@TCGGTCAA_TCTCAATC": {
+                "barcode": [
+                    "TCGGTCAA",
+                    "TCTCAATC"
+                ],
+                "concentration": 0.019872321577589,
+                "output": [
+                    "KGK59_l01_TCGGTCAATCTCAATC.fastq.gz"
+                ]
+            },
+            "@TGATTGAC_AATCCTAT": {
+                "barcode": [
+                    "TGATTGAC",
+                    "AATCCTAT"
+                ],
+                "concentration": 0.020394953631784,
+                "output": [
+                    "KGK59_l01_TGATTGACAATCCTAT.fastq.gz"
+                ]
+            },
+            "@TGATTGAC_ATCTGGAC": {
+                "barcode": [
+                    "TGATTGAC",
+                    "ATCTGGAC"
+                ],
+                "concentration": 0.025393391619913,
+                "output": [
+                    "KGK59_l01_TGATTGACATCTGGAC.fastq.gz"
+                ]
+            },
+            "@TGATTGAC_CGATTCCG": {
+                "barcode": [
+                    "TGATTGAC",
+                    "CGATTCCG"
+                ],
+                "concentration": 0.023707809631407,
+                "output": [
+                    "KGK59_l01_TGATTGACCGATTCCG.fastq.gz"
+                ]
+            },
+            "@TGATTGAC_GAGACTGA": {
+                "barcode": [
+                    "TGATTGAC",
+                    "GAGACTGA"
+                ],
+                "concentration": 0.0255174966727,
+                "output": [
+                    "KGK59_l01_TGATTGACGAGACTGA.fastq.gz"
+                ]
+            },
+            "@TGATTGAC_GCGAAGTG": {
+                "barcode": [
+                    "TGATTGAC",
+                    "GCGAAGTG"
+                ],
+                "concentration": 0.021988526701844,
+                "output": [
+                    "KGK59_l01_TGATTGACGCGAAGTG.fastq.gz"
+                ]
+            },
+            "@TGATTGAC_TCTCAATC": {
+                "barcode": [
+                    "TGATTGAC",
+                    "TCTCAATC"
+                ],
+                "concentration": 0.026829158696126,
+                "output": [
+                    "KGK59_l01_TGATTGACTCTCAATC.fastq.gz"
+                ]
+            }
+        },
+        "confidence threshold": 0.9,
+        "noise": 0.008031522683408,
+        "transform": {
+            "token": [
+                "0::8",
+                "1::8"
+            ]
+        },
+        "undetermined": {
+            "output": [
+                "KGK59_l01_undetermined.fastq.gz"
+            ]
+        }
+    },
+    "template": {
+        "transform": {
+            "token": [
+                "0::",
+                "1::"
+            ]
+        }
+    }
+}

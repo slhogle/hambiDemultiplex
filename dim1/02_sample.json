@@ -1,0 +1,17 @@
+{
+    "import": [ "01_core.json" ],
+    "input": [
+        "../R1.fastq.gz",
+        "../I1.fastq.gz",
+        "../I2.fastq.gz",
+        "../R2.fastq.gz"
+    ],
+    "output": [ "l00.bam "],
+    "report url": "07_sample_report.json",
+    "sample": {
+        "algorithm": "pamld",
+        "base": "@dimension01",
+        "confidence threshold": 0.9,
+        "noise": 0.1
+    }
+}
