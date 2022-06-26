@@ -3,7 +3,7 @@
 We are using a new protocol for sequencing the HAMBI microbial community that allows for a greater degree of multiplexing by preparing libraries in-house at the University of Turku [Center for Evolutionary Applications](https://www.utu.fi/en/university/faculty-of-science/biology/center-of-evolutionary-applications). The protocol follows the [Adapterama series II](https://peerj.com/articles/7786/). Fusion primers compatible with Illumina iTru primers can be designed using a simple spreadsheet from the supplementary material of the paper. These fusion primers have quadruple indexes - one pair of standard 8 bp Illumina iTru indexes and one pair of custom 5 bp indexes.
 
 # Demultiplexing
-For demultiplexing I have been using the pheniqs software ([https://doi.org/10.1186/s12859-021-04267-5](https://doi.org/10.1186/s12859-021-04267-5))that is [available from here](https://github.com/biosails/pheniqs). There documentation is available [here](https://biosails.github.io/pheniqs/).
+For demultiplexing I have been using the pheniqs software ([https://doi.org/10.1186/s12859-021-04267-5](https://doi.org/10.1186/s12859-021-04267-5)) that is [available from here](https://github.com/biosails/pheniqs). There documentation is available [here](https://biosails.github.io/pheniqs/).
 
 The strategy I have used is to first demultiplex on the outer Illumina iTru indexes creating, for example, 6 different demultiplexed bam files as shown here. This is the [dim1](dim1) directory. Then these six bam files are each demultiplexed one-by-one using the pairs of the inner custom indexes in the [dim2](dim2) directory. The Adapteramma II indexes are 5 bp long, but 0-3 bp of spacer precede these indexes meaning that they don't all start at the same sequencing cycle in the read. The spacer sequence is included to create extra diversity at the read positions since these are low-diversity amplicon libraries. My solution has been to incorporate the spacer sequence and then 0-3 bp of the 5' sequence of the 16S primers to ensure that each index is 8 bp long and always starts on the first sequencing cycle.
 
@@ -24,7 +24,7 @@ GACTACHVGGGTATCTAATCC
 
 # Protocol
 
-1. Obtain MiSeq folder output
+## 1. Obtain MiSeq folder output
 
 Ask for the raw output from the sequencer before `bcl2fastq` is run. This should be a directory called something like `220617_M00558_0297_000000000-KGK59`. You can download this using a script like:
 
@@ -42,11 +42,11 @@ wget --user USERNAME --password PASSWORD -r -l0 -np "URL_TO_OUTPUT_FOLDER" -P . 
 ```
 This may take some time since the sequencing center will not not tar or compress the run folder so you must recursively download many image files.
 
-2. Clean up the run metadata
+## 2. Clean up the run metadata
 
 Note: first must convert the date xml tag from the `RunInfo.xml` file to "American" style - month/day/year - or else the parser fails
 
-3. Generate basecall script
+## 3. Generate basecall script
 
 You can do this automatically using a python script bundled withd pheniqs
 
@@ -87,16 +87,16 @@ bcl2fastq \
 
 The basecalling script will generate 4 fastq files - 2 Illumina TruSeq index files and 2 read files. These are necessary to pass to the pheniqs software.
 
-4. Demultiplexing dimension 1
+## 4. Demultiplexing dimension 1
 
 I basically adapted the [Fluidigm tutorial](https://biosails.github.io/pheniqs/fluidigm_vignette) for these steps.
 
-The structure of the dual indexed sequencing reads is as follows ([10.7717/peerj.7786/fig-3](https://peerj.com/articles/7786/#fig-3)
+The structure of the dual indexed sequencing reads is as follows ([10.7717/peerj.7786/fig-3](https://peerj.com/articles/7786/#fig-3))
 
 ![Figure 3](./fig-3-2x.jpg)
 
 There are two dimensions along which we demultiplex - the outer Illumina TruSeq indexes (i5 and i7 in the figure) and the inner custom indexes (R1 index and R2 index in the figure). We first demultiplex the TruSeq index pairs - follow the [`pipeline.sh`](./dim1/pipeline.sh) and adapt the json config files to your specific use case. This should produce X individual bam files (1 for each TruSeq index pair) in the `dim1` directory. 
 
-5. Demultiplexing dimension 2
+## 5. Demultiplexing dimension 2
 
 This basically repeats the steps from step 4 but we are demultiplexing on the 8 bp indexes (R1 and R2 indexes). But we need to create config json files for each of the X bam files produced in step 4 above in a new directory with the same name as the bam file generated in step 4 above (e.g., [`KGK59_AACAACCGCGACACTT`](./dim2/KGK59_AACAACCGCGACACTT)) We also do a new prior estimation for the R1 and R2 indexes. Follow the dim2 [`KGK59_AACAACCGCGACACTT/pipeline.sh`](./dim2/KGK59_AACAACCGCGACACTT/pipeline.sh)) and adapt the json config files to your specific use case. This should produce X individual fastq files (1 for each Adapterama index pair) in the `dim2` directory.
