@@ -24,6 +24,26 @@ GACTACHVGGGTATCTAATCC
 
 # Protocol
 
+## 0. Get Pheniqs software
+
+The exact version of the software I've been using (2.1.0-54-gdcaea6e4402cf0d58fb318f4119df0ea06c879cb) is available in a singularity container.
+
+```
+singularity pull library://slhogle/base/pheniqs:2.1.0
+```
+
+The singularity container can be wrapped using tykky so that you don't have to specify bind paths etc.
+
+```
+#!/usr/bin/bash
+
+module load tykky
+
+wrap-container -w /usr/local/bin,/opt/software/pheniqs_api /ABOSULTE/PATH/TO/pheniqs.sif --prefix /ABOSULTE/PATH/TO/tykky/pheniqs
+```
+
+Then add the `PATH=/ABOSULTE/PATH/TO/tykky/pheniqs/bin:$PATH` to your `.bashrc` file (or whatever shell you use). Afterward you can use pheniqs and its associated python scripts like they were installed natively.
+
 ## 1. Obtain MiSeq folder output
 
 Ask for the raw output from the sequencer before `bcl2fastq` is run. This should be a directory called something like `220617_M00558_0297_000000000-KGK59`. You can download this using a script like:
